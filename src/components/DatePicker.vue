@@ -27,9 +27,6 @@
           <template v-slot:activator="{ on, attrs }">
             <v-combobox
                 v-model="dates"
-                multiple
-                chips
-                small-chips
                 label="Multiple picker in menu"
                 prepend-icon="mdi-calendar"
                 readonly
@@ -38,8 +35,9 @@
             ></v-combobox>
           </template>
           <v-date-picker
+              class="custom-picker"
               v-model="dates"
-              multiple
+              range
               no-title
               scrollable
           >
