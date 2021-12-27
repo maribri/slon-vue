@@ -1,0 +1,164 @@
+/* color #333*/
+/*arrow #8B9197 hover #1078DB*/
+/*week-name #22282D*/
+/*day non-active #ccc*/
+
+
+.theme--light.v-card {
+    /*color: #333 !important;*/
+}
+
+.custom-picker.v-picker {
+    font-family: 'Navigo', Arial, Helvetica, sans-serif !important;
+    /*color: #333 !important;*/
+    box-shadow: 0 12px 24px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 8%);
+    border-radius: 6px;
+}
+
+.custom-picker.v-picker .v-date-picker-header .v-btn.v-btn--icon {
+    color: #8B9197;
+}
+
+.custom-picker.v-picker .v-date-picker-header .v-btn.v-btn--icon:hover {
+    color: #1078DB;
+}
+
+.custom-picker.v-picker .v-date-picker-table {
+    padding: 0 6px;
+}
+
+.custom-picker.v-picker .v-date-picker-table table {
+    border-collapse: collapse;
+}
+
+.custom-picker.v-picker .v-date-picker-table--date th {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #22282D;
+}
+
+.custom-picker.v-picker .v-picker__title {
+    display: none;
+}
+
+.custom-picker.v-picker .v-btn--rounded {
+    border-radius: 0;
+}
+
+.custom-picker.v-picker .accent {
+    background-color: #45A4FF !important;
+    border-color: #45A4FF !important;
+}
+
+.custom-picker.v-picker .accent--text {
+    color: #45A4FF !important;
+    caret-color: #45A4FF !important;
+}
+
+.custom-picker.v-picker .v-date-picker-table .v-btn.v-btn--active {
+    color: #333;
+    background-color: #E8F1FF !important;
+}
+
+.custom-picker.v-picker .v-date-picker-table .v-btn.v-date-picker--first-in-range,
+.custom-picker.v-picker .v-date-picker-table .v-btn.v-date-picker--last-in-range {
+    color: #fff;
+    background-color: #45A4FF !important;
+    border-color: #45A4FF !important;
+    border-radius: 4px;
+}
+
+.custom-picker.v-picker .v-date-picker-table__current {
+    color: inherit !important;
+    border-color: #45A4FF !important;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.custom-picker.v-picker .v-date-picker-table .v-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.custom-picker.v-picker .v-btn:before {
+    opacity: 0;
+}
+
+.v-date-picker-header__value button::first-letter {
+    text-transform: uppercase;
+}
+
+.custom-multiselect, .custom-multiselect.v-input {
+    font-family: 'Navigo', Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #61676A;
+}
+
+.custom-multiselect.v-select .primary--text {
+    color: #45A4FF !important;
+    caret-color: #45A4FF !important;
+}
+
+.custom-multiselect.v-select .v-menu__content {
+    scrollbar-width: thin;
+    scrollbar-color: #4c5d6b white;
+}
+
+.custom-multiselect.v-select .v-menu__content::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+ }
+
+.custom-multiselect.v-select .v-menu__content::-webkit-scrollbar-track {
+    background: white;
+ }
+
+.custom-multiselect.v-select .v-menu__content::-webkit-scrollbar-thumb {
+    background-color: #4c5d6b;
+    border-radius: 14px;
+    border-top: 4px solid #4c5d6b;
+    /*border-top: 19px solid green;
+    border-bottom: 19px solid green;*/
+}
+
+.custom-multiselect.v-select .v-input__slot {
+    min-height: 20px !important;
+}
+
+.custom-multiselect.v-select .v-list-item {
+    min-height: 41px;
+}
+
+.custom-multiselect.v-select .v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+    color: #61676A !important;
+}
+
+.custom-multiselect.v-select .v-list-item.v-list-item--active {
+    color: #61676A !important;
+}
+
+.custom-multiselect.v-select .v-list-item--link:before {
+    background-color: /*#eef4f9*/#115792;
+}
+
+.custom-multiselect.v-select .v-list-item:hover:before {
+    opacity: 0.12 !important;
+}
+
+.custom-multiselect.v-select .v-list-item--active:before, .custom-multiselect.v-select .v-list-item--active:hover:before, .custom-multiselect.v-select .v-list-item:focus:before {
+    /*opacity: 1 !important;*/
+}
+
+.custom-multiselect .v-list-item__action {
+    display: none;
+}
+
+.custom-multiselect .v-list-item__content {
+    padding: 10px 0;
+}
+
+.custom-multiselect .v-list-item__title {
+    font-size: inherit;
+}
