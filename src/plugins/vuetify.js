@@ -11,4 +11,11 @@ export default new Vuetify({
     locales: { ru },
     current: 'ru',
   },
+  theme: {
+    themes: {
+      light: {
+        primary: '#1078DB',
+      }
+    }
+  }
 });

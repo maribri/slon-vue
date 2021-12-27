@@ -1,12 +1,53 @@
+/* Custom Text Field */
+
+/* height 38px + 2px*/
+/* border #D8D8D8*/
+/* border:focus #1078DB*/
+/* border-radius 6px*/
+/* color #22282D*/
+/* svg width 48px*/
+/* svg color #8B9197*/
+/* svg:hover color #1078DB*/
+
+.custom-textfield.v-text-field.primary--text, .custom-textfield.v-text-field .primary--text {
+    color: #1078DB !important;
+    caret-color: #1078DB !important;
+}
+
+.custom-textfield.v-text-field.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset,
+.custom-textfield.v-text-field.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset,
+.custom-multiselect.v-text-field.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset,
+.custom-multiselect.v-text-field.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset {
+    color: #D8D8D8;
+}
+
+.custom-textfield.v-text-field--outlined:not(.v-input--is-dirty):not(.v-input--is-focused)>.v-input__control>.v-input__slot,
+.custom-multiselect.v-select:not(.v-input--is-dirty):not(.v-input--is-focused)>.v-input__control>.v-input__slot {
+    background-color: #F5F6F6;
+}
+
+.custom-textfield.v-text-field--outlined>.v-input__control>.v-input__slot {
+    /*background-color: #F5F6F6;*/
+}
+
+.custom-textfield.v-text-field--outlined .v-icon {
+    color: #8B9197;
+}
+
+/*.v-text-field--outlined.v-input--has-state fieldset, .v-text-field--outlined.v-input--is-focused fieldset*/
+
+.custom-textfield.v-text-field--outlined.v-input--has-state fieldset, .custom-textfield.v-text-field--outlined.v-input--is-focused fieldset,
+.custom-multiselect.v-text-field--outlined.v-input--has-state fieldset, .custom-multiselect.v-text-field--outlined.v-input--is-focused fieldset {
+    border-width: 1px;
+    /*border-color: purple;*/
+}
+
+/* Custom Datepicker */
+
 /* color #333*/
 /*arrow #8B9197 hover #1078DB*/
 /*week-name #22282D*/
 /*day non-active #ccc*/
-
-
-.theme--light.v-card {
-    /*color: #333 !important;*/
-}
 
 .custom-picker.v-picker {
     font-family: 'Navigo', Arial, Helvetica, sans-serif !important;
@@ -55,6 +96,10 @@
     caret-color: #45A4FF !important;
 }
 
+.custom-picker.v-picker .v-btn:before {
+    display: none !important;
+}
+
 .custom-picker.v-picker .v-date-picker-table .v-btn.v-btn--active {
     color: #333;
     background-color: #E8F1FF !important;
@@ -62,7 +107,7 @@
 
 .custom-picker.v-picker .v-date-picker-table .v-btn.v-date-picker--first-in-range,
 .custom-picker.v-picker .v-date-picker-table .v-btn.v-date-picker--last-in-range {
-    color: #fff;
+    color: #fff !important;
     background-color: #45A4FF !important;
     border-color: #45A4FF !important;
     border-radius: 4px;
@@ -73,6 +118,10 @@
     border-color: #45A4FF !important;
     border-width: 2px;
     border-radius: 4px;
+}
+
+.custom-picker.v-picker .v-date-picker-table .v-btn.v-btn--disabled, .custom-picker.v-picker .v-date-picker-table .v-btn.v-btn--disabled .v-btn__loading, .custom-picker.v-picker .v-date-picker-table .v-btn.v-btn--disabled .v-icon {
+    color: #ccc !important;
 }
 
 .custom-picker.v-picker .v-date-picker-table .v-btn {
@@ -90,15 +139,26 @@
     text-transform: uppercase;
 }
 
+/* Custom Multiselect */
+
+/* border #CDCDCD*/
+/* bg #F5F6F6*/
+/* placeholder #949CA0*/
+
 .custom-multiselect, .custom-multiselect.v-input {
     font-family: 'Navigo', Arial, Helvetica, sans-serif !important;
     font-size: 14px !important;
     color: #61676A;
 }
 
+.custom-multiselect.v-text-field.primary--text, .custom-multiselect.v-text-field .primary--text {
+    color: #1078DB !important;
+    caret-color: #1078DB !important;
+}
+
 .custom-multiselect.v-select .primary--text {
-    color: #45A4FF !important;
-    caret-color: #45A4FF !important;
+    color: #1078DB !important;
+    caret-color: #1078DB !important;
 }
 
 .custom-multiselect.v-select .v-menu__content {
@@ -123,8 +183,48 @@
     border-bottom: 19px solid green;*/
 }
 
+.custom-multiselect .custom-search-list-item .v-list-item__content, .custom-multiselect .v-list--dense .v-list-item .v-list-item__content, .custom-multiselect .v-list-item--dense .v-list-item__content {
+    padding: 0;
+}
+
+.custom-multiselect .custom-search-list-item .v-list-item__content .v-text-field {
+    padding-top: 0;
+    margin-top: 1px;
+}
+
 .custom-multiselect.v-select .v-input__slot {
+    margin-bottom: 2px;
     min-height: 20px !important;
+    /*outline: 1px solid grey;*/
+}
+
+.custom-multiselect.v-select .v-input__slot:after {
+    border-width: 0 0 1px !important;
+}
+
+.custom-multiselect.v-select .v-input__slot .v-icon {
+    font-size: 26px;
+    color: #B0B9BE;
+}
+
+.custom-multiselect.v-select .v-input__slot .v-input__icon--clear .v-icon {
+    font-size: 18px;
+}
+
+.custom-multiselect.v-select .v-input__slot + .v-text-field__details {
+    display: none;
+}
+
+.custom-multiselect.v-select .v-text-field>.v-input__control>.v-input__slot:before {
+    border: 0;
+}
+
+.custom-multiselect.v-select.v-text-field input::placeholder {
+    color: #949CA0;
+}
+
+.custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selections {
+    padding: 3px 0 4px;
 }
 
 .custom-multiselect.v-select .v-list-item {
@@ -147,6 +247,10 @@
     opacity: 0.12 !important;
 }
 
+.custom-multiselect .v-menu__content {
+    box-shadow: 0 12px 24px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 8%);
+}
+
 .custom-multiselect.v-select .v-list-item--active:before, .custom-multiselect.v-select .v-list-item--active:hover:before, .custom-multiselect.v-select .v-list-item:focus:before {
     /*opacity: 1 !important;*/
 }
@@ -159,6 +263,6 @@
     padding: 10px 0;
 }
 
-.custom-multiselect .v-list-item__title {
-    font-size: inherit;
+.custom-multiselect .v-list-item__title, .custom-multiselect .v-list--dense .v-list-item__title {
+    font-size: inherit !important;
 }

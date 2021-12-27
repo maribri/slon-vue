@@ -34,8 +34,26 @@
     </v-app-bar>
 
     <v-main>
-      <DatePicker/>
-      <Select/>
+      <v-container class="mt-10">
+        <v-row>
+          <v-col
+              cols="12"
+              sm="4"
+          >
+            <DatePicker/>
+          </v-col>
+          <v-col
+              cols="12"
+              sm="4"
+          ></v-col>
+          <v-col
+              cols="12"
+              sm="4"
+          >
+            <Select/>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-main>
   </v-app>
 </template>

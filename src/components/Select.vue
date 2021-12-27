@@ -1,15 +1,13 @@
 <template>
-  <v-container class="mt-10 col-4">
-    <v-select v-model="selectedFruits" :items="fruits" clearable attach outlined multiple class="custom-multiselect" :menu-props="{ bottom: true, offsetY: true }">
-      <template v-slot:prepend-item>
-        <v-list-item>
-          <v-list-item-content>
-            <v-text-field v-model="searchTerm" placeholder="Поиск" @input="searchFruits"></v-text-field>
-          </v-list-item-content>
-        </v-list-item>
-      </template>
-    </v-select>
-  </v-container>
+  <v-select v-model="selectedFruits" :items="fruits" clearable attach dense outlined multiple class="custom-multiselect" :menu-props="{ bottom: true, offsetY: true }" append-icon="mdi-chevron-down">
+    <template v-slot:prepend-item>
+      <v-list-item class="custom-search-list-item">
+        <v-list-item-content>
+          <v-text-field v-model="searchTerm" placeholder="Поиск" @input="searchFruits"></v-text-field>
+        </v-list-item-content>
+      </v-list-item>
+    </template>
+  </v-select>
 </template>
 
 <script>
