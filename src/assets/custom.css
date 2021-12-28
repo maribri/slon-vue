@@ -26,7 +26,7 @@
 }
 
 .custom-textfield.v-text-field--outlined:not(.v-input--is-dirty):not(.v-input--is-focused)>.v-input__control>.v-input__slot,
-.custom-multiselect.v-select:not(.v-input--is-dirty):not(.v-input--is-focused)>.v-input__control>.v-input__slot {
+.custom-multiselect.v-select/*:not(.v-input--is-dirty):not(.v-input--is-focused)*/>.v-input__control>.v-input__slot {
     background-color: #F5F6F6;
 }
 
@@ -43,7 +43,7 @@
 .custom-textfield.v-text-field--outlined.v-input--has-state fieldset, .custom-textfield.v-text-field--outlined.v-input--is-focused fieldset,
 .custom-multiselect.v-text-field--outlined.v-input--has-state fieldset, .custom-multiselect.v-text-field--outlined.v-input--is-focused fieldset {
     border-width: 1px;
-    /*border-color: purple;*/
+    border-color: #D8D8D8;
 }
 
 /* Custom Datepicker */
@@ -208,7 +208,7 @@
 
 .custom-multiselect.v-select .v-input__slot .v-icon {
     font-size: 26px;
-    color: #B0B9BE;
+    color: #B0B9BE !important;
 }
 
 .custom-multiselect.v-select .v-input__slot .v-input__icon--clear .v-icon {
@@ -227,8 +227,12 @@
     color: #949CA0;
 }
 
-.custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selections {
-    padding: 3px 0 4px;
+.custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selections, .custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line).v-input--dense .v-select__selections {
+    font-weight: 500;
+}
+
+.custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selection:first-child, .custom-multiselect.v-select.v-text-field--outlined:not(.v-text-field--single-line).v-input--dense .v-select__selection:first-child {
+    padding-left: 1px;
 }
 
 .custom-multiselect.v-select .v-list-item {
